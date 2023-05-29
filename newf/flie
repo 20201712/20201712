@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>홈페이지 놀이</title>
+<style>
+	h3 { color : skyblue; } 
+</style>
+</head>
+<body>
+<h3>홈페이지 놀이</h3>
+<hr>
+    
+<form>
+	검색: <input type="text" size="10" value="">
+		  <input type="button" value="버튼">
+		  <button type="button">버튼</button><br>
+	아무거나 버튼 : <input type="submit" value="아무거나">
+				<button type="submit">아무거나</button><br>
+	아무거나2 버튼 : <input type="reset" value="아무거나2">
+				<button type="reset">아무거나2</button><br>
+	이미지버튼 : <input type="image" src="media/button.png" alt="이미지 버튼">
+				<button type="button"><img src="media/button.png" alt="이미지 버튼"></button><br><br>
+</form>
+    
+<form>
+	<select name="ABCD">
+		<option value="1">abcd</option>
+		<option value="2" selected>ABCD</option>
+		<option value="3">abCD</option>
+	</select><br><br>
+</form>
+    
+<form>
+	(0.0~10.0놀이) :
+	<input type="number" min="0.0" max="10.0"
+						 step="0.5"><br><br>
+	놀이 :	10&deg;
+	<input type="range" min="10" max="30"
+					list="temperatures">30&deg;
+	<datalist id="temperatures">
+ 		<option value="12" label="Low">
+ 		<option value="20" label="Medium">
+ 		<option value="28" label="High">
+	</datalist><br><br>
+</form>
+    
+<form>
+	<fieldset>
+		<legend>회원정보</legend>
+		이메일 : <input type="email"><br>
+		홈페이지 : <input type="url"><br>
+		전화번호 : <input type="tel">
+	</fieldset>
+</form>
+    
+<form>
+<pre>
+달 :	<input type="month" value="2022-03"><br> 
+주 : 	<input type="week" value="2022-W09"><br>
+데이터 : <input type="date" value="2022-03-01"><br> 
+시간 : 	<input type="time" value="21:30"><br>
+지역 :	<input type="datetime-local" 
+			value="2022-09-01T21:30:10.32"><br>
+</pre>
+</form>    
+    
+<form>
+색 선택 <input type="color" value="#00BFFF"
+	onchange="document.body.style.color=this.value">
+</form>
+</body>
+</html>
+
 
